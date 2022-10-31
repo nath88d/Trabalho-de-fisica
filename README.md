@@ -10,3 +10,5 @@ no menor tempo possível ou com a menor velocidade relativa possível ou
 qualquer outra condição ótima relevante.
 
 (Depois muda tudo...)
+
+Graficos: https://www.w3schools.com/js/js_graphics_plotly.asp
