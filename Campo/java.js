@@ -1,4 +1,4 @@
-const canvas = document.getElementById("mycanvas");
+const canvas = document.getElementById("mycanvas"); canvas.width = screen.width/2; canvas.height = screen.height/2;
 const ctx = canvas.getContext("2d");
 document.addEventListener("mousemove", function(evento) {
     rect = canvas.getBoundingClientRect();
@@ -66,25 +66,25 @@ campo();
 function ball_(){
     ctx.beginPath();
     ctx.strokeStyle = cor_do_campo;
-    ctx.arc(canvas.width/2, canvas.height/2, 50, 0, 50);
+    ctx.arc(canvas.width/2, canvas.height/2, canvas.width*0.07, 0, canvas.width*0.05);
     ctx.stroke();
 
     ctx.fillStyle = cor_do_campo;
     ctx.beginPath();
     ctx.beginPath();
-    ctx.arc(canvas.width/11, canvas.height/2, 10, 0, 10);
+    ctx.arc(canvas.width/11, canvas.height/2, canvas.width*0.01, 0, 10);
     ctx.fill();
     ctx.stroke();
     ctx.fillStyle = cor_do_campo;
     ctx.beginPath();
     ctx.beginPath();
-    ctx.arc(canvas.width/1.1, canvas.height/2, 10, 0, 10);
+    ctx.arc(canvas.width/1.1, canvas.height/2, canvas.width*0.01, 0, 10);
     ctx.fill();
     ctx.stroke();
     ctx.fillStyle = cor_do_campo;
     ctx.beginPath();
     ctx.beginPath();
-    ctx.arc(canvas.width/2, canvas.height/2, 10, 0, 10);
+    ctx.arc(canvas.width/2, canvas.height/2, canvas.width*0.01, 0, 10);
     ctx.fill();
     ctx.stroke();
 }

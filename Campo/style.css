@@ -5,6 +5,19 @@ canvas {
     margin: auto;
     background-color: white;
 }
+#mycanvas{
+    display:table;
+}
+#grafico{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: white;
+    width: 50%;
+    height: 50%;
+
+}
 body {
     background: white;
 }
