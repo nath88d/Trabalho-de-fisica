@@ -1,29 +1,29 @@
 
 function grafico(xArray, yArray){//O numero de elementos em x temque ser o mesmo em y 
     
-    // Define Data
+    // Configura os valores
     var data = [{
         x:xArray,
         y:yArray,
         mode:"lines"
     }];
     
-    // Define Layout
+    // Define o Layout
     var layout = {
-        xaxis: {range: [50, 160], title: "Tempo"},
-        yaxis: {range: [0, 16], title: "Velocidade"}, 
+        xaxis: {range: [50, 160], title: "Tempo"},//Delimita o tamanho de x
+        yaxis: {range: [0, 16], title: "Velocidade"},//Delimita otamanho de y
         title: "velocidade em funcao do tempo"
     };
     
     // Display using Plotly
 Plotly.newPlot("grafico", data, layout);
 }
-function graficos_multiplos(){
-    var exp1 = "x";
-    var exp2 = "1.5*x";
-    var exp3 = "1.5*x + 7";
+function graficos_multiplos(){//Recebe formula por string
+    var exp1 = "x*0.7";
+    var exp2 = "1.5**x*0.4";
+    var exp3 = "x*0.8+ 7";
 
-    // Generate values
+    // Gera valores
 
     var x1Values = [];
     var x2Values = [];
@@ -54,7 +54,7 @@ function graficos_multiplos(){
     // Display using Plotly
     Plotly.newPlot("mult", data, layout);
 }
-var x= [50,60,70,80,90,100,110,120,130,140,150];
+var x = [50,60,70,80,90,100,110,120,130,140,150];
 var y = [7,8,8,9,5,1,10,11,14,14,15];
 grafico(x,y);
 graficos_multiplos();
