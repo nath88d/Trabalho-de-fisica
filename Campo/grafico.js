@@ -19,8 +19,8 @@ function grafico(xArray, yArray){//O numero de elementos em x temque ser o mesmo
 Plotly.newPlot("grafico", data, layout);
 }
 function graficos_multiplos(){//Recebe formula por string
-    var exp1 = "x*0.7";
-    var exp2 = "1.5**x*0.4";
+    var exp2 = "(x**0.1+x**2-1)-x**2";
+    var exp1 = "x";
     var exp3 = "x*0.8+ 7";
 
     // Gera valores
@@ -54,7 +54,7 @@ function graficos_multiplos(){//Recebe formula por string
     // Display using Plotly
     Plotly.newPlot("mult", data, layout);
 }
-var x = [50,60,70,80,90,100,110,120,130,140,150];
-var y = [7,8,8,9,5,1,10,11,14,14,15];
+var x = [50,60,70,80,90,100,110,120,130,140,150,90];
+var y = [7,8,8,9,5,1,10,11,14,14,15,19];
 grafico(x,y);
 graficos_multiplos();

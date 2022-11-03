@@ -7,10 +7,13 @@
     <title>Campo</title>
 </head>
 <body>
-    <canvas id="mycanvas"></canvas>
+    <canvas id="mycanvas"></canvas><button onclick="botao = 1">Ligar Grade</button><button onclick="botao = 0">Desligar Grade</button>
     <div id="grafico"></div>
     <div id="mult"></div>
-<script src="java.js"></script>
+    <input type='file' accept='text/plain' onchange='openFileReadAsText(event)'><br>
+    <p id="texto"></p><br>
+<script src="canvas.js"></script>
 <script src="grafico.js"></script>
+<script src="arquivo.js"></script>
 </body>
 </html>
