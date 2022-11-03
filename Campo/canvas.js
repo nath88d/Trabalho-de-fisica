@@ -1,4 +1,4 @@
-const canvas = document.getElementById("mycanvas"); canvas.width = screen.width/2; canvas.height = screen.height/2;
+const canvas = document.getElementById("mycanvas"); canvas.width = 900; canvas.height = 600;
 const ctx = canvas.getContext("2d"); ctx.style ="z-index: 0;"
 document.addEventListener("mousemove", function(evento) {
     rect = canvas.getBoundingClientRect();
