@@ -43,9 +43,9 @@ function graficos_multiplos(){//Recebe formula por string
 
     // Define Data
     var data = [
-    {x: x1Values, y: y1Values, mode:"markers"},
-    {x: x2Values, y: y2Values, mode:"lines"},
-    {x: x3Values, y: y3Values, mode:"lines"}
+    {x: x1Values, y: y1Values, name:"Aceleracao do robo", mode:"markers"},
+    {x: x2Values, y: y2Values, name:"Velocidade do robo", mode:"lines"},
+    {x: x3Values, y: y3Values, name:"Velocidade da bola", mode:"lines"}
     ];
 
     // Define Layout

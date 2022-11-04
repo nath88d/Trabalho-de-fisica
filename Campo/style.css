@@ -3,7 +3,7 @@ canvas {
     display: flex;
     justify-content: center;
     margin: auto;
-    background-color: white;
+    background-color: rgb(17, 179, 17);
 }
 #mycanvas{
     display:table;

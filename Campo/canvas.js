@@ -23,7 +23,7 @@ document.addEventListener("mousemove", function(evento) {
     }
 })
 let botao;
-var cor_do_campo = "black";
+var cor_do_campo = "white";
 function campo(){
     ball_();
     if(botao==1)grade();
@@ -73,13 +73,13 @@ function ball_(){
     ctx.fillStyle = cor_do_campo;
     ctx.beginPath();
     ctx.beginPath();
-    ctx.arc(canvas.width/11, canvas.height/2, canvas.width*0.01, 0, 10);
+    ctx.arc(canvas.width/(9/1), canvas.height/2, canvas.width*0.01, 0, 10);
     ctx.fill();
     ctx.stroke();
     ctx.fillStyle = cor_do_campo;
     ctx.beginPath();
     ctx.beginPath();
-    ctx.arc(canvas.width/1.1, canvas.height/2, canvas.width*0.01, 0, 10);
+    ctx.arc(canvas.width/(9/8), canvas.height/2, canvas.width*0.01, 0, 10);
     ctx.fill();
     ctx.stroke();
     ctx.fillStyle = cor_do_campo;
