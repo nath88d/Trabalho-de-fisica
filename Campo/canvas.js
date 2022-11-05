@@ -4,19 +4,36 @@ document.addEventListener("mousemove", function(evento) {
     rect = canvas.getBoundingClientRect();
     x_mouse = evento.clientX - rect.left;
     y_mouse = evento.clientY - rect.top;
-    var bola = new Image();
-    bola.src = 'bola.png'; bola.style = "z-index: 1;"
-    var bolax = x_mouse-canvas.width*0.015;
-    var bolay = y_mouse-canvas.height*0.03;
+    let bola_img = new Image(); let robo_img = new Image();
+    bola_img.src = 'bola.png'; robo_img.src = 'robo.png';
+    //////////////////////////////////
+    bola = {
+        x: x_mouse-9,
+        y: y_mouse-9,
+    }
+    robo = {
+        x: x_mouse-40,
+        y: y_mouse-20,
+    }
+    ///////////////////////////
     console.log("Largura: "+canvas.width+"\nAltura: "+ canvas.height);
     
-    function ball1() {
+    /*
+    function robo1(){
+        ctx.beginPath();
         ctx.clearRect(0,0,canvas.width, canvas.height);
-        ctx.drawImage(bola, bolax, bolay, canvas.width*0.03, canvas.height*0.06);
+        ctx.fill();
+        ctx.stroke();
+    }*/
+    function ball1(){
+        ctx.beginPath();
+        ctx.clearRect(0,0,canvas.width, canvas.height);
+        ctx.drawImage(bola_img, bola.x, bola.y, 9, 9 );
+        ctx.drawImage(robo_img, robo.x, robo.y, 20 , 20 );
         ctx.fill();
         ctx.stroke();
     }
-    if((bolax <= canvas.width-canvas.width*0.03) && (bolax >= 0) && (bolay <= canvas.height-canvas.height*0.06) && (bolay >= 0)){
+    if((bola.x <= canvas.width-canvas.width*0.03) && (bola.x >= 0) && (bola.y <= canvas.height-canvas.height*0.06) && (bola.y >= 0)){
         ball1();
         requestAnimationFrame(campo());
         requestAnimationFrame(ball1());

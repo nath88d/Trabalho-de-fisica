@@ -8,8 +8,14 @@ canvas {
 #mycanvas{
     display:table;
 }
+#arq{
+    display:table;
+    background:5pt blueviolet;
+    border: 5px solid black;
+}
 #grafico, #mult{
-    border: 2px solid black;
+    border: 5px solid black;
+    border-radius: 2%;;
     display: flex;
     justify-content: center;
     margin: auto;
