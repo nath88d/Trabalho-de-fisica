@@ -9,19 +9,28 @@
 </head>
 <body>
 
-    <canvas id="mycanvas"></canvas>
+    <div id="canvas-container">
+        <canvas id="mycanvas"></canvas>
+    </div>
     <script type="module" src="../Scripts/main.js"></script>
+
+    <h1>Controles de Animação</h1>
 
     <div id="controle-animacao">
         <button id="iniciar-animacao">Iniciar Animação</button>
         <button id="parar-animacao">Parar Animação</button>
     </div>
 
+    <h1>Configurações do Robo</h1>
+
     <div id="configuracoes-robo">
         <input id="velocidade-robo" placeholder="Velocidade do Robo (m/s)">
         <input id="posicaox-robo" placeholder="Posição X do Robo">
         <input id="posicaoy-robo" placeholder="Posição Y do Robo">
+        <button id="aplicar-ajustes">Aplicar</button>
     </div>
+    
+    <h1>Saída de Dados</h1>
 
     <div id="grafico"></div>
     <div id="mult"></div>
